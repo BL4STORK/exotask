@@ -3,13 +3,13 @@
 
 #define MAX_TACHES 10
 
-// Structure pour représenter une tâche
+
 struct Tache {
     char description[100];
     int estComplete;
 };
 
-// Fonction pour ajouter une tâche à la liste
+
 void ajouterTache(struct Tache listeTaches[], int *nombreTaches) {
     if (*nombreTaches < MAX_TACHES) {
         printf("Entrez la description de la tâche : ");
@@ -22,7 +22,7 @@ void ajouterTache(struct Tache listeTaches[], int *nombreTaches) {
     }
 }
 
-// Fonction pour afficher la liste des tâches
+
 void afficherListeTaches(struct Tache listeTaches[], int nombreTaches) {
     if (nombreTaches == 0) {
         printf("La liste de tâches est vide.\n");
@@ -35,7 +35,7 @@ void afficherListeTaches(struct Tache listeTaches[], int nombreTaches) {
     }
 }
 
-// Fonction pour marquer une tâche comme complète
+
 void marquerTacheComplete(struct Tache listeTaches[], int nombreTaches) {
     int choix;
 
